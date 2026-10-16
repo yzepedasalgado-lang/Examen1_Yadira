@@ -48,6 +48,11 @@
 
 
 <main>
+    <div>
+        <h1>DEINSA HONDURAS</h1>
+        <span>Distrubuidora de suministros electricos industriales</span>
+    </div>
+
     <section id="catalogo">
         <div>
             <div>
@@ -265,6 +270,8 @@
 
     <section id="cotizaciones">
 
+        <h2>Cotizaciones</h2>
+
         <form method="post">
             <div>
                 <input type="number" name="cantidad_de_unidades" id="cantidad" required placeholder="Cantidad de unidades a comprar" min="1">
@@ -379,6 +386,70 @@
                 </tbody>
 
             </table>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <h2>Formulario de Requisitos y Licitacion B2B</h2>
+                        </div>
+                        
+                        <form action="">
+                            <div>
+                                <div>
+                                    <div>
+                                        <input type="text" id="empresa" name="empresa" required placeholder="Ej. Inversiones la Orquidea">
+                                        <label for="empresa">Nombre de la Empresa o Contratista Solicitante</label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <input type="text" id="rtn" name="rtn" required pattern="[0-9]{14}" maxlength="14" minlength="14" placeholder="14 dígitos numéricos">
+                                        <label for="rtn">RTN Numérico (14 dígitos)</label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <input class="form-control" type="email" id="correo" placeholder="compras@empresa.com" required>
+                                        <label for="correo">Correo Electrónico Corporativo </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <label for="departamento">Departamento de Entrega</label>
+                                        <select id="departamento" name="departamento" required>
+                                            <option value="" disabled selected>Seleccione un departamento</option>
+                                            <option value="cortes">Cortés</option>
+                                            <option value="francisco-morazan">Francisco Morazán</option>
+                                            <option value="comayagua">Comayagua</option>
+                                            <option value="choluteca">Choluteca</option>
+                                            <option value="olancho">Olancho</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="terminos">
+                                    <input type="checkbox" id="terminos" name="terminos" required>
+                                    <label for="terminos">Acepto los términos de garantía técnica y cotización</label>
+                                </div>
+
+                                <div class="botones">
+                                    <button type="submit" class="btn-enviar">Enviar Cotización</button>
+                                    <button type="reset" class="btn-limpiar">Limpiar Formulario</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
